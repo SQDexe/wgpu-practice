@@ -1,8 +1,8 @@
 # WGPU Practice
 
-This is a project made in order to accuire basic knowledge of modern graphical APIs. In this particular case, it's WGPU
+This is a project made in order to acquire basic knowledge of modern graphical APIs. In this particular case, it's WGPU
 
-While writing the code I ommited the parts which are needed for WASM
+While writing the code, I omitted the parts which are needed for WASM
 
 ## Acknowledgments
 

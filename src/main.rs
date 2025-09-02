@@ -10,13 +10,20 @@ mod vertex;
 
 use {
     anyhow::Result as DynResult,
-    env_logger::init as init_env_logger,
+    env_logger::{
+        builder as env_logger_builder,
+        WriteStyle,
+        Target
+        },
     winit::event_loop::EventLoop,
     crate::app::App
     };
 
 fn main() -> DynResult<()> {
-    init_env_logger();
+    env_logger_builder()
+        .target(Target::Stdout)
+        .write_style(WriteStyle::Auto)
+        .init();
 
     let event_loop = EventLoop::with_user_event()
         .build()?;
